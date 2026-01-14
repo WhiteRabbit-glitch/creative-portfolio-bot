@@ -134,7 +134,7 @@ async def on_message(message):
 async def ping(ctx):
     await ctx.send('Pong! Bot is alive and ready to review portfolios.')
 
-@bot.command(name='help')
+@bot.command(name='guide')
 async def help_command(ctx):
     help_text = """
 **UX Portfolio Feedback Bot**
@@ -155,7 +155,7 @@ Upload a PDF of your portfolio and I'll provide detailed feedback!
 
 **Commands:**
 - `!ping` - Check if bot is online
-- `!help` - Show this message
+- `!guide` - Show this message
 """
     await ctx.send(help_text)
 
